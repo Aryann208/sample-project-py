@@ -4,6 +4,7 @@ from datetime import datetime
 from modules.data_loader import load_data
 from modules.trading_logic import TradingLogic
 from modules.config_loader import load_config
+from modules.dataframe_transformer import transform_dataframes
 
 def setup_logging() -> None:
     """Set up logging configuration."""
