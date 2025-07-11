@@ -102,3 +102,13 @@ def adjust_risk_parameters(performance_metrics: Dict[str, float], current_parame
         current_parameters['risk_per_trade'] *= 0.9  # Decrease risk slightly
     
     return current_parameters
+
+def create_default_risk_manager() -> RiskManager:
+    """
+    Creates and returns a default RiskManager instance with ATRBasedStopLoss strategy.
+    
+    Returns:
+        RiskManager: A risk manager configured with the ATRBasedStopLoss strategy
+    """
+    atr_strategy = ATRBasedStopLoss()
+    return RiskManager(atr_strategy)

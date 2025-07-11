@@ -7,7 +7,6 @@ from modules.trade_signal import create_default_signal_generator
 from modules.risk_management import create_default_risk_manager
 from modules.reentry_logic import create_default_reentry_logic
 from modules.order_execution import OrderExecutor, OrderType, OrderSide
-from indicators import Stochastic, SuperTrend, MADIST, ATR, SMA, nADX, SAR, Macd, Chandelier_Stop
 
 class TradingLogic:
     def __init__(self, symbol: str):

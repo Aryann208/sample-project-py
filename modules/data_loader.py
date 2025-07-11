@@ -70,4 +70,6 @@ def isOpencandle(df: pd.DataFrame, index: int) -> bool:
     
     opening_time = time(9, 15)
     
+    
+    
     return current_time == opening_time

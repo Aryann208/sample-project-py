@@ -6,6 +6,7 @@ from datetime import datetime
 # Configure logger
 logger = logging.getLogger(__name__)
 
+
 def standardize_column_names(df: pd.DataFrame, column_mapping: Optional[Dict[str, str]] = None) -> pd.DataFrame:
     """
     Standardize column names in a DataFrame based on a mapping or default rules.

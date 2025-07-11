@@ -202,6 +202,9 @@ def get_environment_config(base_path: str, environment: str = None, schema: Opti
         Dict containing the environment-specific configuration
     """
     if environment is None:
+        
+        
+        
         environment = os.environ.get('ENV', 'development')
     
     loader = ConfigLoader(schema)
